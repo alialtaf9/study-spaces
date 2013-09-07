@@ -11,7 +11,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130907060131) do
+ActiveRecord::Schema.define(:version => 20130907055541) do
+
+  create_table "users", :force => true do |t|
+    t.string   "name"
+    t.integer  "facebook_id"
 
   create_table "buildings", :force => true do |t|
     t.string   "name"
